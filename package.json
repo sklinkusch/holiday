@@ -1,0 +1,12 @@
+{
+  "name": "holiday",
+  "version": "1.0.0",
+  "description": "holiday class in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["holiday", "JavaScript"],
+  "author": "Stefan Klinkusch",
+  "license": "MIT"
+}
