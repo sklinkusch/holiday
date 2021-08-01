@@ -113,6 +113,15 @@ class IsDateHoliday {
   }
 }
 
-const myDate = new Date()
-const holiday = new IsDateHoliday(myDate)
-console.log(holiday.holiday)
+const args = process.argv.slice(2)
+if (args.length == 3) {
+  const [day, month, year] = args
+  const monthIndex = month - 1
+  const myDate = new Date(year, monthIndex, day)
+  const holiday = new IsDateHoliday(myDate)
+  console.log(holiday.holiday)
+} else {
+  const myDate = new Date()
+  const holiday = new IsDateHoliday(myDate)
+  console.log(holiday.holiday)
+}
